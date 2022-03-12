@@ -23,11 +23,6 @@ const navLinks = [
   },
 ]
 ---
-<style>
-nav {
-  background: gray;
-}
-</style>
 <nav>
   <div class="container nav-container">
   <Icon name="logo" width={225} class="logo" />
@@ -53,12 +48,8 @@ nav {
 
 <script>
   const navBtn = document.querySelector("#menu-btn");
-  const navLinks = document.querySelectorAll(".nav-links");
   navBtn.addEventListener("click", () => {
     const ariaExpanded = navBtn.getAttribute("aria-expanded") === "false";
     navBtn.setAttribute("aria-expanded", ariaExpanded.toString());
-    navLinks.forEach((link) => {
-      link.classList.toggle("nav-active");
-    });
   });
 </script>

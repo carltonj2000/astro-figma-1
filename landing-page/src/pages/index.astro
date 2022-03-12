@@ -1,7 +1,22 @@
 ---
+import {Icon} from "astro-icon";
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import Services from '../components/Services.astro';
 ---
 
 <BaseLayout>
-Stuff
+  <Hero />
+
+  <section class="programmer container blur grid-sm">
+    <Icon 
+      name="programmer"
+      width="400px"
+      class="programmer-icon"
+      alt="Programmer" 
+      aria-hidden="true" />
+  </section>
+
+  <Services />
+
 </BaseLayout>
